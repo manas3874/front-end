@@ -1,4 +1,5 @@
 Hello viewer.
+view the site in action at: https://binate-it-task.web.app
 
 1. The developed webpage is only for desktop (non-responsive), without functionality (no JavaScript).
 2. Entire styling is done in SCSS, hence I request you to view the style.scss file instead of style.css.

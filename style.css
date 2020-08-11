@@ -1,0 +1,311 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo::after {
+  content: 'innovation begins';
+  font-size: 0.4em;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.nav-list > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.nav-list > ul li > a {
+  color: cadetblue;
+  padding: 8px;
+}
+
+.nav-list > ul li > a:hover, .nav-list > ul li > a:focus {
+  color: white;
+  background-color: cadetblue;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.list-item + .list-item {
+  margin-left: 30px;
+}
+
+.landing-area-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4fr;
+      grid-template-columns: 3fr 4fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.landing-area-grid .landing-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing-area-grid .landing-flex h1 {
+  margin: 0;
+}
+
+.landing-area-grid .landing-flex p {
+  color: grey;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  text-transform: lowercase;
+}
+
+.landing-area-grid aside {
+  width: 100%;
+  height: 120%;
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.highlights {
+  margin-top: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.highlights img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.highlights p {
+  text-transform: lowercase;
+  color: #6d6c6c;
+}
+
+.advantages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+}
+
+.advantages .advantages-grid {
+  -webkit-columns: 2;
+          columns: 2;
+}
+
+.advantages .advantages-grid .advantage-card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 5fr;
+      grid-template-columns: 2.5fr 5fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10px;
+}
+
+.advantages .advantages-grid .advantage-card-grid .content-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages .advantages-grid .advantage-card-grid .content-flex h4 {
+  margin-top: 1em;
+}
+
+.advantages .advantages-grid .advantage-card-grid .content-flex p {
+  text-transform: lowercase;
+  color: #6d6c6c;
+}
+
+.advantages aside {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+.cases {
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.cases h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.cases::after {
+  content: url(./icons/right-chevron.png);
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.cases::before {
+  content: url(./icons/left-chevron.png);
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  cursor: pointer;
+}
+
+.cases .cases-container {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 4rem;
+  padding: 3rem 2rem;
+  background-color: #5a5a5a;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
+  grid-gap: 2rem;
+}
+
+.cases .cases-container .description h3 {
+  color: white;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.cases .cases-container .description p {
+  color: #c5c0c0;
+  text-transform: lowercase;
+}
+
+.cases .cases-container .case-images .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.cases .cases-container .case-images .top-row {
+  margin-bottom: 3rem;
+}
+
+.cases .cases-container .case-images .bottom-row {
+  padding-top: 3rem;
+  border-top: 2px solid white;
+}
+
+.contact {
+  background-color: #5a5a5a;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h1 {
+  color: white;
+  padding-top: 1rem;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.contact p {
+  max-width: 400px;
+  color: white;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.contact form * {
+  margin: 20px 0;
+}
+
+.contact form input[type="text"],
+.contact form textarea {
+  background-color: #e2e2e2;
+  border: none;
+  padding: 10px 5px;
+  width: 400px;
+}
+
+.contact form input[type="text"]:focus,
+.contact form textarea:focus {
+  outline: none;
+  border: none;
+}
+
+footer {
+  padding: 1rem 0.5rem;
+}
+
+.attribute {
+  font-size: 0.7rem;
+}
+/*# sourceMappingURL=style.css.map */

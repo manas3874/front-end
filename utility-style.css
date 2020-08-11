@@ -1,0 +1,56 @@
+:root {
+    scroll-behavior: smooth;
+    /* smooth scrolling for navigation */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 0.20rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    color: white;
+    background-color: cadetblue;
+    padding: 12px 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.btn:hover {
+    transition-duration: 300ms;
+    background-color: rgb(71, 126, 128);
+}
